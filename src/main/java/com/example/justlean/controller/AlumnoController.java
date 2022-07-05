@@ -41,4 +41,16 @@ public class AlumnoController {
         }
     }
 
+
+    @GetMapping(value = "/login/{userName}/{password}")
+    public Object loginUser(@PathVariable("userName") String userName, @PathVariable("password") String password) {
+        Alumnos users = userService.login(userName, password);
+        if (null != users) {
+            return new ResponseEntity<>(users, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Contraseña/UserName Incorrecto", HttpStatus.BAD_GATEWAY);
+        }
+    }
+
+
 }

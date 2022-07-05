@@ -6,6 +6,8 @@ import com.example.justlean.model.Niveles;
 import com.example.justlean.repository.MateriaRepository;
 import com.example.justlean.repository.NivelesRepository;
 import com.example.justlean.service.NivelesByMateria;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

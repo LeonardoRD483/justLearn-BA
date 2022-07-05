@@ -14,5 +14,5 @@ public interface MateriaService {
     public Optional<Niveles> findBy(Integer id);
     public Niveles save(Niveles Users);
     public void delete(Integer id);
-
+    public List<Object> findByMateria(Integer id);
 }

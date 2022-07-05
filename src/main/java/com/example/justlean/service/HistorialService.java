@@ -15,5 +15,6 @@ public interface HistorialService {
     public Optional<Historial> findBy(Integer id);
     public Historial save(Historial Users);
     public void delete(Integer id);
+    public Object dashBoard(Integer id);
 
 }
